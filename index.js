@@ -6,21 +6,13 @@ var count = 0;
 for(var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function (e) {
     let element = e.target;
-    if (element.className === "increase") {
-      count++
-    } else if (element.className === "decrease") {
-      count--
-    }
-    else {
-      count = 0;
-    }
-    if (count > 0) {
-      counterEl.style.color = "green";
-    } else if (count < 0) {
-      counterEl.style.color = "red";
-    } else {
-      counterEl.style.color = "black";
-    }
+    element.className === "increase" ? count++
+    : element.className === "decrease" ? count--
+    : count = 0;
+    <!-- color ternary operator -->
+    count > 0 ? counterEl.style.color = "green"
+    : count < 0 ? counterEl.style.color = "red"
+    : counterEl.style.color = "black";
     counterEl.textContent = count;
   })
 }
