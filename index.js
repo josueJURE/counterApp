@@ -3,8 +3,8 @@ const myBtns = document.getElementsByTagName("button");
 const btns = Array.from(myBtns)
 var count = 0;
 
-for(var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function (e) {
+btns.forEach(function(item) {
+  item.addEventListener("click", function (e) {
     let element = e.target;
     element.className === "increase" ? count++
     : element.className === "decrease" ? count--
@@ -15,5 +15,19 @@ for(var i = 0; i < btns.length; i++) {
     : counterEl.style.color = "black";
     counterEl.textContent = count;
   })
-}
+})
+
+// for(var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function (e) {
+//     let element = e.target;
+//     element.className === "increase" ? count++
+//     : element.className === "decrease" ? count--
+//     : count = 0;
+//     <!-- color ternary operator -->
+//     count > 0 ? counterEl.style.color = "green"
+//     : count < 0 ? counterEl.style.color = "red"
+//     : counterEl.style.color = "black";
+//     counterEl.textContent = count;
+//   })
+// }
 console.log(btns)
