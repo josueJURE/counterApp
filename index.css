@@ -1,7 +1,10 @@
+
+
 #counterEl {
   text-align: center;
-  margin-top: 200px;
-  font-size: 2000%;
-  border: solid;
-  border-radius: 20px;
+  margin: 100px;
+  border: green solid;
+  border-radius: 25px;
+  width: 500px;
+  font-size: 100px;
 }

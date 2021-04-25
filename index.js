@@ -9,11 +9,15 @@ btns.forEach(function(item) {
     element.className === "increase" ? count++
     : element.className === "decrease" ? count--
     : count = 0;
-    <!-- color ternary operator -->
+    <!-- text color ternary operator -->
     count > 0 ? counterEl.style.color = "green"
     : count < 0 ? counterEl.style.color = "red"
     : counterEl.style.color = "black";
     counterEl.textContent = count;
+    <!-- border color ternary operator -->
+    count > 0 ? counterEl.style.borderColor = "green"
+    : count < 0 ? counterEl.style.borderColor = "red"
+    : counterEl.style.borderColor = "black";
   })
 })
 
