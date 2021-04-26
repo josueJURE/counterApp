@@ -14,10 +14,8 @@ btns.forEach(function(item) {
     : count < 0 ? counterEl.style.color = "red"
     : counterEl.style.color = "black";
     counterEl.textContent = count;
-    <!-- border color ternary operator -->
-    count > 0 ? counterEl.style.borderColor = "green"
-    : count < 0 ? counterEl.style.borderColor = "red"
-    : counterEl.style.borderColor = "black";
+    <!-- border color to match text color -->
+    counterEl.style.borderColor = counterEl.style.color
   })
 })
 
