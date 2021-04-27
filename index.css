@@ -1,10 +1,29 @@
 
 
 #counterEl {
-  text-align: center;
-  margin: 100px;
-  border: green solid;
+  border: green solid 20px;
   border-radius: 25px;
-  width: 500px;
   font-size: 100px;
+  height: 250px;
+  margin: 100px;
+  outline-style: dotted;
+  outline-offset: 15px;
+  padding: 50px;
+  text-align: center;
+  vertical-align: middle;
+  width: 250px;
 }
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  padding: 15 25px;
+  text-align: center;
+  font-size: 24px;
+}
+button:hover {background-color: #3e8e41}
